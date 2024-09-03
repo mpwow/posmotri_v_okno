@@ -261,17 +261,18 @@ fieldset {
 }
 
 .content__card-link {
-  color: #fff;
-  text-decoration: none;
   display: block;
   margin: 2px;
+  color: #fff;
+  text-decoration: none;
 }
 
-.content__card-link:active, .content__card-link_current{
+.content__card-link:active,
+.content__card-link_current {
   background-color: #545050;
 }
 
-.content__card-link:hover{
+.content__card-link:hover {
   text-decoration: underline 1px;
   text-underline-offset: 2px;
 }
@@ -280,7 +281,7 @@ fieldset {
   outline: none;
 }
 
-.content__card-link:focus-visible  {
+.content__card-link:focus-visible {
   outline: 1px solid white;
 }
 
