@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -16,9 +19,6 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 h1,
@@ -78,12 +78,6 @@ ol {
   justify-content: space-between;
 }
 
-/* Сбрасываем рамки у fieldset */
-
-fieldset {
-  border: none;
-}
-
 /* Стили для поля ввода города, его состояний и плейсхолдера */
 
 .search-form__textfield {
@@ -133,6 +127,12 @@ fieldset {
   white-space: nowrap;
 }
 
+/* Сбрасываем рамки у набора элементов в форме */
+
+.search-form__fieldset {
+  border: none;
+}
+
 /* Заголовки наборов в форме поиска */
 
 .search-form__fieldset-title {
@@ -156,6 +156,7 @@ fieldset {
   align-items: center;
   gap: 5px;
   width: fit-content;
+  cursor: pointer;
 }
 
 /* Отображение новых чекбоксов вместо стандартных и их состояния */
@@ -251,7 +252,7 @@ fieldset {
   flex-direction: column;
   gap: 30px;
   height: 298px;
-  overflow: scroll;
+  overflow: auto;
 }
 
 /* Стили карточки и ее состояния */
