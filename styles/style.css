@@ -313,6 +313,7 @@ ol {
   flex-grow: 1;
   padding: 2px 0px 4px 2px;
   text-decoration: none;
+  max-width: 200px;
 }
 
 .content__video-card-title {
